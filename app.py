@@ -1,4 +1,4 @@
-cbnm,.dghjmk,bnm,
+cbnm,.dghjmk
 import streamlit as st
 import joblib
 import numpy as np
@@ -147,5 +147,6 @@ if st.button('🔮 Predict Engagement'):
             st.metric(label="Engagement Score", 
                      value=f"{metrics['engagement_score']:.1f}/10", 
                      delta=f"{metrics['engagement_score']-7:.1f}" if metrics['engagement_score'] > 7 else f"{7-metrics['engagement_score']:.1f}")
+
 
 
